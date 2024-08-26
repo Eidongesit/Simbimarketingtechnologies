@@ -1,0 +1,712 @@
+body, html {
+  overflow-x: hidden;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    padding-top: 60px;
+    overflow-x: hidden;
+    font-family: 'Comic Neue', cursive;
+    background-color: #ffffff;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(216, 213, 213, 0.1);
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top */
+  height: 50px;
+}
+/* Style the toggler button */
+.navbar-toggler {
+  border: none;
+}
+/* Style the three-color button */
+.btn-outline-light {
+  border-color: #fff; /* Match border color with background */
+}
+.custom-gold {
+  color: #241f01;
+  font-size:0.7em;
+}
+
+.montserrat-header {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+h4.custom-gold {
+  font-size: 2rem; /* Default size for larger screens */
+}
+/* Smaller Font Size for Medium Screens */
+@media (max-width: 768px) {
+  h4.custom-gold {
+      font-size: 1.5rem; /* Medium screens size */
+  }
+}
+/* Even Smaller Font Size for Small Screens */
+@media (max-width: 576px) {
+  h4.custom-gold {
+      font-size: 0.65rem; /* Small screens size */
+  }
+}
+#sidebar {
+  width: 300px; /* Set the width of the offcanvas */
+  height: 400px; /* Set the height of the offcanvas */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds the height */
+  margin: 35px;
+  border-radius: 25px; /* Correct border-radius property */
+  border: 5px solid #f8f8dd; /* Border color and width */
+}
+/* Optionally, you can add some padding or margin for better spacing */
+.offcanvas-body {
+  padding: 0;
+}
+/* Custom Navigation Link Styles */
+.nav-hover {
+  position: relative;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000; /* Text color */
+  overflow: hidden; /* To ensure the pseudo-element is within the link */
+}
+
+.nav-hover:hover {
+  color: #ffd700; /* Optional: change text color on hover */
+  border-radius: 50px;
+  border: 2px solid; /* Set a base border width for the gradient */
+  border-image: linear-gradient(to right, #0d6efd, #198754, #ffc107); /* Gradient colors */
+  border-image-slice: 0.5;
+  width: 50px;
+}
+.card-img-top{
+  width:65px;
+  height:50px;
+}
+.productname{
+  font-size: 0.875rem; /* Smaller font size for titles */
+    margin: 0;
+}
+
+.text-center {
+  color: #fff; /* White text color */
+}
+
+.display-4 {
+  font-size: 2.5rem; /* Adjust font size */
+}
+
+.lead {
+  font-size: 1.25rem; /* Adjust font size */
+}
+
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem; /* Adjust for smaller screens */
+  }
+  
+  .lead {
+    font-size: 1rem; /* Adjust for smaller screens */
+  }
+}
+/* Google Section */
+#google-ads-like-section {
+  background-color: #f8f9fa; /* Light grey background */
+  position: relative;
+  margin-top: -50px;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif; /* Use a clean, modern font */
+}
+.content-container {
+  position: absolute;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.content-slide img {
+  width: 400px;
+  height: 350px;
+}
+.content-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.content-slide.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.content-slide.prev {
+  transform: translateY(-100%);
+}
+
+.content-slide.next {
+  transform: translateY(100%);
+}
+
+.Head {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+
+.mild {
+  font-size: 1.5rem;
+  color: #6c757d; /* A mild grey color for the paragraph text */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .Head {
+      font-size: 2.5rem;
+  }
+
+  .mild {
+      font-size: 1.2rem;
+  }
+}
+.border1{
+  border-bottom: 3px solid black;
+  margin:10px;
+  font-size: 25px;
+}
+.border2{
+  border-bottom: 3px solid gold;
+  margin:10px;
+  text-decoration: none!important;
+  font-size: 25px;
+}
+.border2 :hover{
+  background-color:  rgb(0, 0, 0);
+   color:white;
+  border-radius: 12px;
+  box-shadow: rgb(146, 143, 143);
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10px;
+
+}
+.border1 :hover{
+  background-color: gold;
+   color:black;
+  border-radius: 12px;
+  box-shadow: rgb(31, 30, 30);
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10px;
+
+}
+
+.footer{
+  margin-top: 130px;
+}
+.buttom{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  }
+
+.user-profiling {
+    padding: 40px 0;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.text-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.text-content {
+    max-width: 500px;
+}
+
+.text-content h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.text-content p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.btn {
+    padding: 10px 20px;
+}
+/* Responsive Styling */
+@media (max-width: 767px) {
+  .text-column {
+      text-align: center;
+  }
+}
+
+/* Animation for text */
+.text-column.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Footer */
+.footer-logo {
+  width: 80px; /* Logo size for mobile */
+}
+
+.footer-title {
+  font-size: 1.125rem; /* Slightly larger font size to ensure visibility */
+}
+
+.small-text {
+  font-size: 1rem; /* Maintain readability for the copyright notice */
+}
+
+/* Apply different sizes for mobile screens */
+@media (max-width: 768px) {
+  .footer-title {
+      font-size: 1rem; /* Smaller title font size but still visible */
+  }
+
+  .small-text {
+      font-size: 0.875rem; /* Small but readable text for the copyright notice */
+  }
+}
+/* Container styling */
+#marketing-message {
+  padding: 50px 0;
+}
+
+/* Small rounded image */
+.small-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Container styling */
+#marketing-message {
+    padding: 50px 0;
+}
+
+/* Small rounded image */
+.small-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Typewriter effect */
+/* Container styling */
+.caption-content {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Typewriter effect */
+.typewriter {
+  display: inline-block;
+  font-size: 24px;
+  color: #333;
+  white-space: pre-wrap; /* Allows text to wrap */
+  overflow: hidden; /* Hides overflow during animation */
+  border-right: 0.15em solid #333; /* Cursor effect */
+  animation: typing 4s steps(40, end) 1s forwards, blink-caret 0.75s step-end infinite;
+  /* Adjust '4s' and '1s' based on text length and delay */
+}
+
+/* Keyframes for typewriter effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Keyframes for caret blinking effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #333; }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height:350px;
+  margin:15px;
+  gap: 10px 
+
+}
+
+.card-img-top {
+  width: 100%;
+  height: 45%;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.card-text {
+  flex-grow: 1;
+  margin-bottom: 10px; /* Adjust this value if needed */
+  font-size: 11px;
+}
+
+.btn {
+  align-self: flex-start;
+}
+/* Modal (background) */
+/* Modal background */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Video Styles */
+video {
+  width: 100%; /* Responsive video */
+  height: auto;
+}
+.header-title {
+  font-size: 45px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  color: #313030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding:15px; /* Padding on sides */
+  
+}
+
+.header-description {
+  font-size: 18px;
+  color: #666;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding:0 5px; /* Padding on sides */
+  
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+  }
+
+  .header-description {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+}
+.header-title .text-warning {
+  margin-right: 10px; /* Adjust space between 'SMT' and the following text */
+}
+/* presell */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* Adjust the spacing between cards */
+ 
+}
+
+.small-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  max-width: 250px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.small-card .icon {
+  padding: 15px;
+  margin-right: 15px;
+  color: #1d1515;
+
+}
+
+.small-card .icon i {
+  font-size: 40px;
+}
+
+.small-card .content {
+  flex: 1;
+}
+
+.small-card .card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.small-card .card-description {
+  font-size: 14px;
+  color: #666;
+}
+
+/* objective stlying */
+.new-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.new-card {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.new-card:hover {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.new-card .icon {
+  font-size: 20px;
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+
+.new-card .card-title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.new-card .card-description {
+  display: none;
+}
+
+.new-card:hover .card-description {
+  display: block;
+  font-size: 11px;
+  font-family:  "Montserrat", sans-serif !important;
+}
+.new-card:hover .icon {
+  color: Gold;
+
+}
+
+.new-card .card-number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+/* Optional custom styling */
+.fixed-bottom {
+  background-color: #007bff; /* Customize button background color */
+  color: white; /* Customize text color */
+  border-radius: 20px; /* Rounded corners */
+  padding: 15px 30px; /* Button padding */
+  margin-right  : 10px;
+  margin-left: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+}
+
+/* Mobile styles */
+/* Form Container */
+#proposal-form-container {
+  display: none; /* Initially hidden */
+  position: fixed; /* Fixed position to overlay the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it’s above other content */
+  padding: 10px; /* Padding for small screens */
+  overflow: auto; /* Allow scrolling if content exceeds viewport */
+}
+
+/* Form Content */
+#proposal-form {
+  background: #fff; /* White background for the form */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  width: 100%; /* Full width on mobile */
+  max-height: 90vh; /* Max height to ensure it doesn’t exceed viewport */
+  overflow-y: auto; /* Enable vertical scrolling */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Close Button */
+#close-form-btn {
+  color: #ff0000; /* Dark text color */
+  cursor: pointer;
+  background-color: transparent; /* Transparent background */
+  border: 1px solid rgb(152, 152, 156);
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
+  display: block;
+  margin-left: auto; /* Pushes the button to the right */
+  margin-right: 0;
+}
+.submit{
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  height: 40px;
+  display: block;
+  margin: 0 auto 15px auto; /* Centered horizontally with space below */
+
+}
+/* Form Labels */
+#proposal-form label {
+  display: block;
+  margin-bottom: 8px; /* Smaller space between fields on mobile */
+  font-weight: bold;
+}
+
+/* Form Inputs, Selects, Textareas */
+#proposal-form input, #proposal-form select, #proposal-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 4px;
+  margin-bottom: 10px; /* Space between fields */
+}
+
+/* Submit Button */
+
+
+/* Submit Button Hover */
+#proposal-form button:hover {
+  background-color: #007bff; /* Darker green on hover */
+}
+
+/* Tablet and up */
+@media (min-width: 600px) {
+  #proposal-form-container {
+    padding: 20px; /* More padding for larger screens */
+  }
+
+  #proposal-form {
+    width: 90%; /* Max-width for larger screens */
+    max-width: 600px; /* Maximum width */
+  }
+
+  #close-form-btn {
+    margin-bottom: 20px; /* More space below the button */
+  }
+
+  #proposal-form label {
+    margin-bottom: 12px; /* Larger space between fields */
+  }
+
+  #proposal-form button {
+    padding: 15px;
+  }
+}
+
+/* Desktop and up */
+@media (min-width: 992px) {
+  #proposal-form-container {
+    padding: 30px; /* Even more padding for large screens */
+  }
+
+  #proposal-form {
+    width: 70%; /* Adjust width for desktop */
+    max-width: 800px; /* Maximum width */
+  }
+}
+
